@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>รายงานผลดำเนินงานการให้บริการ</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>รายงานผลดำเนินงานการให้บริการ</h2>
+    <div class="form-group"><label>การให้บริการ</label><select id="service-select">
+        <option value="" disabled selected hidden>เลือกบริการ</option>
+        <option>บริการ 1</option>
+        <option>บริการ 2</option>
+        <option>บริการ 3</option>
+        <option>บริการ 4</option>
+        <option>บริการ 5</option>
+        <option>บริการ 6</option>
+        <option>บริการ 7</option>
+      </select></div>
+    <div class="form-group"><label>เริ่มจากเดือน</label><input type="month" id="start-month"></div>
+    <div class="form-group"><label>สิ้นสุดถึงเดือน</label><input type="month" id="end-month"></div><button
+      id="gen-report" onclick="generateReport()">สร้างรายงาน</button><button id="export-report"
+      onclick="exportReport()">บันทึกเป็นไฟล์ Excel</button>
+    <table id="report-table" style="display:none;">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Month</th>
+          <th>Numbers_of_Services</th>
+          <th>Sum_of_Service_Durations</th>
+          <th>Average_Service_Duration</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="/js/report.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+Note: การรัน Server
+
+ขั้นตอน:
+1. เข้าโฟลเดอร์ C:\Users\Charoensin\Desktop\Service Standard
+2. เปิด cmd ที่โฟลเดอร์นี้
+3. ที่ cmd พิมพ์คำสั่ง node server.js
+4. เปิด Webbrowser ที่คำค้นหา พิมพ์ว่า http://localhost:3000
+5. เปิด Webbrowser ที่คำค้นหา พิมพ์ว่า http://localhost:3000/database
+6. เปิด Webbrowser ที่คำค้นหา พิมพ์ว่า http://localhost:3000/report
+7. ทดลองเพิ่มรายการใน http://localhost:3000
+8. รายการใหม่ จะปรากฎใน http://localhost:3000/database
+9. สรุปรายงานใน http://localhost:3000/report
+
+10. ใช้งานเสร็จแล้ว ต้องการปิดโปรแกรม มาที่ cmd
+11. กดปุ่ม Ctrl+C เพื่อปิด Server
+12. ปิด cmd และ ปิด Webbrowser

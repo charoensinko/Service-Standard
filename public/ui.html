@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>บันทึกการให้บริการ</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>บันทึกการให้บริการ</h2>
+    <form action="/submit" method="post">
+      <div class="form-group"><label>การให้บริการ</label><select name="service" required>
+          <option value="" disabled selected hidden>เลือกบริการ</option>
+          <option>บริการ 1</option>
+          <option>บริการ 2</option>
+          <option>บริการ 3</option>
+          <option>บริการ 4</option>
+          <option>บริการ 5</option>
+          <option>บริการ 6</option>
+          <option>บริการ 7</option>
+        </select></div>
+      <div class="form-group"><label>วันที่ให้บริการ</label><input type="date" name="date" required
+          placeholder="เลือกวันที่ให้บริการ"></div>
+      <div class="form-group"><label>รหัสลูกค้า</label><input type="text" name="cust_id" maxlength="20" required
+          placeholder="กรอกรหัสลูกค้า"></div>
+      <div class="form-group"><label>เวลาเริ่มให้บริการ</label><input type="time" name="start_time" required
+          placeholder="กรอกเวลาเริ่มบริการ"></div>
+      <div class="form-group"><label>เวลาสิ้นสุดการบริการ</label><input type="time" name="stop_time" required
+          placeholder="กรอกเวลาสิ้นสุดบริการ"></div><button type="submit">บันทึกข้อมูล</button>
+    </form>
+  </div>
+  <script src="/js/ui.js"></script>
+</body>
+
+</html>
